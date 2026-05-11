@@ -46,4 +46,7 @@ this(songName, songArtist, 0, ""){
         Log.v("Song", "$name favourited now")
         return true
     }
+    fun GetDisplaystring() : String{
+        return "$name - $artist ($duration)"
+    }
 }
