@@ -14,9 +14,11 @@ class Song (
     var artist: String = ""
     var year: Int = 0
     var duration: String = ""
+
+    // secondary constructor with only name and artist
 constructor(songName: String, songArtist: String) :
 this(songName, songArtist, 0, ""){
-    
+
 }
 
 
