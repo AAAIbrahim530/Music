@@ -2,7 +2,7 @@ package com.example.musicapp
 
 import android.animation.Animator
 import android.util.Log
-
+// primary constructor takes all the variables
 class Song (
     songName: String,
     songArtist: String,
@@ -14,6 +14,8 @@ class Song (
     var year: Int = 0
     var duration: String = ""
 
+    //init block is used to set the values from
+    // the primary condtructor into properties
     init {
         name = songName
         artist = songArtist
