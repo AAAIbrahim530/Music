@@ -11,11 +11,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        var song1 = Song(songName: "Soft Life", songArtist: "Nomfundo Moh"
-                         songYear: 2022, songDuration: "4:08")
-        var song2 = Song( songName = "10,000 days (wings Pt2)", songArtist = "Tool",
-                          songYear = 2006, songDuration = "11:13")
-        var song3 = Song(songName = "Just a little tune")
+        var song1 = Song(  "Soft Life",  "Nomfundo Moh",
+                         2022,  "4:08")
+        var song2 = Song( "10,000 days (wings Pt2)", "Tool", 2006, "11:30")
+        var song3 = Song( "Just a little tune",  "Some Birdy Tweeted")
         setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
