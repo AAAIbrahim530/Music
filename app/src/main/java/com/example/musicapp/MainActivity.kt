@@ -24,6 +24,12 @@ class MainActivity : AppCompatActivity() {
         titleView.text = song1.name
         artistView.text = song1.artist
 
+        titleView.text = song2.name
+        artistView.text = song2.artist
+
+        titleView.text = song3.name
+        artistView.text = song3.artist
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
